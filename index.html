@@ -4,10 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Full Stack Fest 2017</title>
+
+		<link rel="manifest" href="manifest.json">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,10 +26,405 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+				<section  data-background-color="rgba(16,34,61,0.9)">
+					<h1 style="color: #fde842; text-shadow: 0.06em 0.06em 0 #e43916;">FullStack</h1>
+					<h1 style="color: #fde842; text-shadow: 0.06em 0.06em 0 #e43916;">Fest</h1>
+				</section>
+
+				<section>
+					<h2>/usr/bin/whoami ?</h2>
+					<h1>Luis Montes</h1>
+					<h1><a href="https://twitter.com/monteslu" target="_blank"><img src="images/t-icon.svg" style="border: 0; background: 0; box-shadow: 0 0 0;"></a> @MONTESLU <a href="https://github.com/monteslu" target="_blank"><img src="images/gh-icon.svg" style="border: 0; background: 0; box-shadow: 0 0 0;"></a></h1>
+				</section>
+
+				<section>
+					<img src="images/iced_blue.png" style="border: 0; background-color: transparent; box-shadow: 0 0 0px rgba(0, 0, 0, 0);">
+				</section>
+
+				<section data-background-image="images/iofs.png">
+					<a href="https://twitter.com/i/moments/817537697535250432" target="_blank" style="color: #4099FF;"><h2 style="color: #4099FF;">@InternetOfS***</h2></a>
+				</section>
+
+				<section>
+					<h2>IoT</h2>
+					<ul>
+						<li>Embedded hardware platforms</li>
+						<li>Mobile devices</li>
+						<li>Bi-Directional communication.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Sep 7, 2010</h3>
+					<h2>node-serialport</h2>
+					<img src="images/serial_devs.png">
+					<h3>over 100 contributors</h3>
+				</section>
+
+				<section>
+					<h2>data transports</h2>
+					<pre><code class="hljs" data-trim>
+// read
+port.on('data', (data) => {
+ // aww yiss
+});
+				</code></pre>
+					<pre><code class="hljs" data-trim>
+// write
+port.write([0xF9, 249, 0b11111001]);
+					</code></pre>
+				</section>
+
+
+				<section data-transition="fade-in fade-out">
+					<h2>NodeBots</h2>
+					<img src="images/pluggedin1.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>NodeBots</h2>
+					<img src="images/pluggedin2.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>NodeBots</h2>
+					<img src="images/pluggedin3.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>NodeBots</h2>
+					<img src="images/pluggedin4.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>NodeBots</h2>
+					<img src="images/pluggedin5.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>NodeBots</h2>
+					<img src="images/pluggedin6.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+
+
+				<section>
+					<h3>Mar 30, 2012 - Johnny-Five</h3>
+					<img src="images/johnnyfive.png">
+					<h3>over 100 contributors</h3>
+				</section>
+
+
+				<section>
+					<h3>johnny-five</h3>
+					<pre><code class="hljs" data-trim>
+						const five = require("johnny-five");
+						const board = new five.Board();
+
+						board.on("ready", () => {
+						  const led = new five.Led(13);
+						  led.blink(500);
+						});
+					</code></pre>
+					<h3>Sensors, Servos, LCDs...</h3>
+				</section>
+
+
+				<section>
+					<h3>April 29, 2014: IO Classes</h3>
+					<h3>Tessel, CHIP, Blend Micro, Raspberry Pi, BeagleBone...</h3>
+					<img src="images/io_authors.png">
+				</section>
+
+				<section data-background-image="images/nodebotsdays.jpg"></section>
+
+				<section>
+					<h2>Web to Nodebots...</h2>
+					<ul>
+						<li>HTTP/REST</li>
+						<li>EventSource</li>
+						<li>Socket.io</li>
+						<li>MQTT</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Progressive Web Apps</h2>
+					<ul>
+						<li>Instant loading / Work offline -  Service Workers</li>
+						<li>Add to homescreen -  manifest.json</li>
+						<li>Push Notifications</li>
+						<li>Fast</li>
+						<li>Secure</li>
+						<li>Responsive</li>
+					</ul>
+				</section>
+
+
+				<section data-transition="fade-in fade-out">
+					<h2>Web RTC</h2>
+					<img src="images/webrtc1.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+					<aside class="notes">
+						Peter wants to have a chat with his good friend Varys, but he has trust issues and he doesn't want to use Facebook Messenger or Slack...
+					</aside>
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>Web RTC</h2>
+					<img src="images/webrtc2.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+					<aside class="notes">
+						He decides to use Web RTC PeerConnection DataChannel, so his web browser of choice makes a request to a public STUN server and creates an offer packet.
+					</aside>
+				</section>
+				<section data-background-image="images/scroll.png" data-transition="fade-in fade-out">
+					<aside class="notes">
+						He needs to get that offer message over to Varys so that Varys's browser can figure out how to make a direct connection to him.
+					</aside>
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>Web RTC</h2>
+					<img src="images/webrtc3.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+					<aside class="notes">
+						While Peter knows a signaling server that uses websockets can be great for this sort of thing, nothing is faster than a Raven.
+					</aside>
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>Web RTC</h2>
+					<img src="images/webrtc4.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+					<aside class="notes">
+						Varys gladly types the offer into his browser byte by byte, and also using a STUN server he creates an answer message, which he copies and pastes into an email because his handwriting isn't as nice as Peter's.
+					</aside>
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>Web RTC</h2>
+					<img src="images/webrtc5.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+					<aside class="notes">
+						Peter then uses Vary's answer to create a direct peer-to-peer connection.  While he could attach voice and video to this secure connection, he's going to use it for chat messages.
+					</aside>
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>PeerConnection DataChannel !</h2>
+					<img src="images/webrtc6.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+					<aside class="notes">
+						Peter and Varys can both easily listen for messages.
+					</aside>
+				</section>
+				<section data-transition="fade-in fade-out">
+					<h2>PeerConnection DataChannel !</h2>
+					<img src="images/webrtc7.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+					<aside class="notes">
+						And Peter goes first.
+					</aside>
+				</section>
+
+
+				<section>
+					<h3>Webpack, Browserify?</h3>
+					<img src="images/browser_j5.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+
+				<section>
+					<h1>
+						You might not need
+					</h1>
+					<h2>
+						Electron, Phonegap, Cordova, Ionic, React-native, Objective C, Swift, Java, Kotlin...
+					</h2>
+				</section>
+
+				<section>
+					<h2>Web MIDI ?</h2>
+					<img src="images/midikeyboard.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+
+				<section>
+					<h2>Arduino MIDI</h2>
+					<img src="images/midi_arduino.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+
+				<section>
+					<h2>MIDI protocol</h2>
+					command, key, velocity<br>
+					[144-207, 0-127, 0-127]<br>
+					6 bits, 7 bits, 7 bits = 20 bits!
+
+				</section>
+
+				<section>
+					<h2>MIDI API</h2>
+
+					<pre><code class="hljs" data-trim>
+// read
+input.onmidimessage = function(message) {
+  var data = message.data;
+};
+					</code></pre>
+					<pre><code class="hljs" data-trim>
+// write
+output.send([144, 20, 60]);
+					</code></pre>
+
+				</section>
+
+
+				<section style="padding: 0px;">
+					<div><h3 style="margin: 0px;"><a href="https://github.com/noopkat/oled-js" target="_blank"><img src="images/noopkat.jpeg" style="vertical-align: middle"><span> noopkat/oled-js </span><img src="images/oled-js.jpg" style="vertical-align: middle"></a></h3></div>
+					<div><h3 style="margin: 0px;"><a href="https://github.com/louiemontes/node-led" target="_blank"><img src="images/louiemontes.jpeg" style="vertical-align: middle"><span> louiemontes/node-led </span><img src="images/node-led.jpg" style="vertical-align: middle"></a></h3></div>
+					<div><h3 style="margin: 0px;"><a href="https://github.com/ajfisher/node-pixel" target="_blank"><img src="images/ajfisher.jpeg" style="vertical-align: middle"><span> ajfisher/node-pixel </span><img src="images/node-pixel.jpeg" style="vertical-align: middle"></a></h3></div>
+				</section>
+
+				<section>
+					<h2>Web USB ?</h2>
+					<img src="images/usb.gif" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+
+				<section>
+					<h2>Web USB Security</h2>
+					<ul>
+						<li>The URLs must be HTTPS (or localhost for dev).</li>
+						<li>User interaction prompted via a browser dialog.</li>
+						<li>Dialog only on a DOM event (button click).</li>
+						<li><s>Firmware must specify allowed URLs.</s></li>
+					</ul>
+				</section>
+
+				<section>
+					<pre><code class="hljs" data-trim>
+// read
+let readLoop = () => {
+  device.transferIn(5, 64).then(result => {
+    var data = result.data;
+    readLoop();
+  }, handleError);
+};
+					</code></pre>
+					<pre><code class="hljs" data-trim>
+// write
+device.transferOut(4, [241, 15, 127]);
+					</code></pre>
+				</section>
+
+
+
+				<section>
+					<h1>Bluetooth</h1>
+					<img src="images/bluetooth-icon-6.png" style="border: 0; background-color: transparent; box-shadow: 0 0 0px rgba(0, 0, 0, 0);">
+					<ul>
+						<li>audio pairing?</li>
+						<li>beacons?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Physical Web</h2>
+					<img src="images/physicalweb.png" style="border:0;">
+				</section>
+
+
+				<section>
+					<h2>Bluetooth Low Energy (BLE)</h2>
+					<img src="images/BLE_diagram.png">
+					<h3>ble-serial -> Arduino</h3>
+				</section>
+
+				<section>
+					<h2>Web Bluetooth</h2>
+					<ul>
+						<li>In Chrome 56 stable!</li>
+						<li>Use <a href="https://github.com/sandeepmistry/noble/pull/238" target="_blank">Noble</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<pre><code class="hljs" data-trim>
+// read
+characteristic.on('data', callback(data, isNotification));
+					</code></pre>
+					<pre><code class="hljs" data-trim>
+// write
+characteristic.write([241, 15, 127], withoutResponse);
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2>Near Field Communications (Web NFC)</h2>
+					<img src="images/nfc.png">
+				</section>
+
+				<section>
+					<h2>Web NFC Push</h2>
+					<pre><code class="hljs" data-trim>
+						navigator.nfc.push(
+						  'hello world'
+						).then(() => {
+						  console.log("Message pushed.");
+						}).catch((error) => {
+						  console.log("Push failed :-( try again.");
+						});
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Web NFC Watch</h2>
+					<pre><code class="hljs" data-trim>
+						navigator.nfc.watch((message) => {
+						  // do something with the message
+						}).then(() => {
+						  console.log("Added a watch.");
+						}).catch((error) => {
+						  console.log("Adding watch failed: " + error.name);
+						});
+					</code></pre>
+				</section>
+
+				<section>
+					<h3><a href="https://armidi.surge.sh/" target="_blank">Demo Time!</a></h3>
+					<img src="images/demo.png" style="border: 0; background: 0; box-shadow: 0 0 0;">
+				</section>
+
+				<section>
+					<h3>demo setup</h3>
+					<pre><code class="hljs" data-trim>
+<video style="z-index: -1"></video>
+<canvas></canvas>
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>more demo setup</h3>
+					<pre><code class="hljs" data-trim>
+renderer = new THREE.WebGLRenderer({
+	canvas: canvas,
+	alpha: true
+});
+renderer.setClearColor( 0x000000, 0);
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>MOAR <a href="https://armidi.surge.sh/" target="_blank">demo</a> setup</h3>
+					<pre><code class="hljs" data-trim>
+// in a web worker
+if('BarcodeDetector' in self) {
+	const barcodeDetector = new BarcodeDetector();
+	barcodeDetector.detect(imageData)
+	.then(barcodes => {
+		// post back up to DOM
+	});
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>Thank You !</h1>
+					<h2>Luis Montes</h2>
+					<h2><a href="https://twitter.com/monteslu" target="_blank">@MONTESLU</a></h2>
+				</section>
+
+				<section>
+					<h4>in case of demo fail :)</h4>
+					<img src="images/ar3d.png">
+				</section>
+
 			</div>
 		</div>
+
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -42,8 +439,19 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				],
+				history: true
 			});
+
+			if ('serviceWorker' in navigator) {
+			  navigator.serviceWorker.register('sw.js')
+			  .then(function(reg) {
+			    console.log('Yey!!! serivceworker for the fsf slides!', reg);
+
+			  }).catch(function(err) {
+			    console.log('Boo no serviceWorker for the fsf slides!', err);
+			  });
+			}
 		</script>
 	</body>
 </html>
